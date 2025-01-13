@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
+  <button class="js-button">start</button>
+  <button class="js-game">login</button>
+
+  <script>
+      document.querySelector('.js-button').addEventListener('click', () => {
+        const button = document.querySelector('.js-button');
+
+        button.innerHTML = 'Loading....';
+        setTimeout(() => {
+          button.innerHTML = 'Finished!';
+        }, 1000); 
+
+      });
+        
+      
+      document.querySelector('.js-game').addEventListener('click', () => {
+        const game = document.querySelector('.js-game');
+
+        game.innerHTML = 'Loading.....';
+        setTimeout(() => {
+          game.innerHTML = 'Welcome!';
+        }, 2000);
+      })
+  </script>
+</body>
+</html>
