@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Game button
+    </title>
+
+
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    .toggle-button{
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: rgb(219, 217, 217);
+      border-radius: 5px;
+      
+    }
+
+    .is-toggled{
+      background-color: black;
+      color: white;
+
+    }
+
+ 
+    </style>
+  </head>
+  
+  
+  <body>
+    <button class="toggle-button js-button" onclick="planka('.js-button');">Gaming</button>
+    <button class="toggle-button js-button-2" onclick="planka('.js-button-2');">Reading</button>
+    <button class="toggle-button js-button-3" onclick="planka('.js-button-3');">Music</button>
+    <button class="toggle-button js-button-4" onclick="planka('.js-button-4');">Tech</button>
+    <button class="toggle-button js-button-5" onclick="planka('.js-button-5');">On Call</button>
+    <button class="toggle-button js-button-6" onclick="planka('.js-button-6');">Airplain Mode</button>
+    <button class="toggle-button js-button-7" onclick="planka('.js-button-7');">Driving</button>
+    <button class="toggle-button js-button-8" onclick="planka('.js-button-8');">Don't disturb</button>
+  
+  <script>
+
+function  planka(selector){
+  const button = document.querySelector(selector);
+  if(!button.classList.contains('is-toggled')) {
+
+    palung ();
+
+
+    button.classList.add('is-toggled');
+  } else{
+    button.classList.remove('is-toggled');
+  }
+
+}
+
+function palung (){
+  const palungon = document.querySelector('.is-toggled');
+  if(palungon){
+    palungon.classList.remove('is-toggled')
+  }
+}
+
+
+  </script>
+  </body>
+</html>

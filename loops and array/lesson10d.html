@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Game button
+    </title>
+
+
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    .toggle-button{
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: rgb(219, 217, 217);
+      border-radius: 5px;
+      
+    }
+
+    .is-toggled{
+      background-color: black;
+      color: white;
+
+    }
+
+ 
+    </style>
+  </head>
+  
+  
+  <body>
+
+    <button class="toggle-button js-button" onclick="
+      gamingbtn();">
+      Gaming
+    </button>
+    
+    <button class="toggle-button js-button-2" onclick="
+    const button = document.querySelector('.js-button-2');
+            if(!button.classList.contains('is-toggled')){
+              button.classList.add('is-toggled');
+            }else{
+              button.classList.remove('is-toggled')
+            }   ">Music</button>
+
+    <button class="toggle-button js-button-3" onclick=" 
+    const button = document.querySelector('.js-button-3');
+            if(!button.classList.contains('is-toggled')){
+              button.classList.add('is-toggled');
+            }else{
+              button.classList.remove('is-toggled')
+            }   
+    ">Tech</button>
+
+
+
+
+
+    <script>
+    function gamingbtn(){
+      const button = document.querySelector('.js-button');
+            if(!button.classList.contains('is-toggled')){
+              button.classList.add('is-toggled');
+            }else{
+              button.classList.remove('is-toggled')
+            }   
+    }
+
+
+
+    </script>
+  </body>
+</html>
