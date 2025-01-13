@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+        let myArray = ["Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri"];
+
+        // Step 1: Remove the last item
+        myArray.pop();
+
+        // Step 2: Add two new names to the end of the array
+        myArray.push("Akuma", "Bison");
+
+        // Step 3: Add index numbers to each name in parentheses
+        myArray = myArray.map((name, index) => `${name} (${index})`);
+
+        // Step 4: Join the array into a single string with a "-" separator
+        let myString = myArray.join("-");
+
+
+        section.innerHTML = ' ';
+
+        let para1 = document.createElement('p');
+        para1.textContent = myString;
+
+        section.appendChild(para1);
+
+    
+  </script>
+</body>
+</html>

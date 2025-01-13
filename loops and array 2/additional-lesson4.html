@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  
+ <script>
+const birds = ["Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets"];
+
+        // Step 1: Find and remove the "Eagles" item
+        const eagleIndex = birds.indexOf("Eagles");
+        if (eagleIndex !== -1) {
+          birds.splice(eagleIndex, 1);
+        }
+
+        // Step 2: Create a new array containing only birds starting with "E"
+        const eBirds = birds.filter(bird => bird.startsWith("E"));
+
+       
+
+        section.innerHTML = ' ';
+
+        const para1 = document.createElement('p');
+        para1.textContent = eBirds;
+
+        section.appendChild(para1);
+
+ </script>
+</body>
+</html>

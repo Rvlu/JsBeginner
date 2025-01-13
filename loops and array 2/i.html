@@ -1,0 +1,27 @@
+<script>
+  function findMaxAndMin(nums) {
+  if (nums.length === 0) {
+    return { max: null, min: null }; // Handle empty arrays
+  }
+
+  let max = nums[0]; // Initialize max with the first element
+  let min = nums[0]; // Initialize min with the first element
+
+  for (let i = 1; i < nums.length; i++) { // Start loop from the second element
+    if (nums[i] > max) {
+      max = nums[i]; // Update max if current number is greater
+    }
+    if (nums[i] < min) {
+      min = nums[i]; // Update min if current number is smaller
+    }
+  }
+
+  return { max, min }; // Return the results as an object
+}
+
+const numbers = [3, 7, -2, 10, 0, -5, 8];
+const result = findMaxAndMin(numbers);
+console.log(`Max: ${result.max}, Min: ${result.min}`);
+// Output: Max: 10, Min: -5
+
+</script>

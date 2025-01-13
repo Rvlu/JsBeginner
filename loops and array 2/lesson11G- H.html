@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+    // 11G creating a loop that take an array of number and creates a ew array where each number is increase by 1.
+
+        const array = [1, 2, 3];
+        const result = [];
+
+      for(let i = 0; i < array.length; i++){
+        result.push(array[i] + 1);
+      }
+
+        console.log(result);
+
+
+        
+      // 11H function array that take an array of numbers and returns an array where each number is increase by 1.
+      
+
+      function addOne(array){
+        const result = [];
+
+        for(let i = 0; i < array.length; i++){
+          result.push(array[i] + 1);
+        }
+
+        return result;
+      }
+
+      console.log(addOne([1, 2, 3]));
+      console.log(addOne([-2, -1, 0, 99]));
+  </script>
+</body>
+</html>
